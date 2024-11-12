@@ -134,9 +134,6 @@ interface adder_2_inputs_interface #(parameter WIDTH = 4) ();
     logic [(WIDTH - 1): 0] a;
     logic [(WIDTH - 1): 0] b;
     
-    localparam MAX_VALUE = (2**WIDTH) - 1;   // MAX_VALUE = 15
-    localparam MIDDLE_VALUE = ((MAX_VALUE - 0) / 2) + 0;     // MIDDLE_VALUE = 7
-    
     // BFM - Bus Functional Model // A set of functions that generate valid stimuli for the DUT.
 
     // function that generates random values bounded to avoid overflow.     
